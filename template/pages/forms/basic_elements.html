@@ -369,10 +369,7 @@
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Forms</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Serah Terima Barang</li>
-                </div>
-                <div class="d-flex justify-content-end mb-0">
-                  <button type="submit" class="btn btn-primary">Tambah Data</button>
-                </div>                              
+                </div>                           
                 </ol>
               </nav>
             </div>  
@@ -396,11 +393,25 @@
                     <input type="date" class="form-control" id="tanggalPinjam" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="barang" class="form-label">Pilih Barang</label>
-                    <select class="form-select" id="barang" required>
+                    <label for="Status" class="form-label d-block">Status</label>
+                    <div class="w-100">
+                    <select class="form-select" id="Status" required>
+                      <option selected disabled>Pilih Status</option>
+                      <option value="Aktif">Dipinjam</option>
+                      <option value="Tidak Aktif">Dikembalikan</option>
                     </select>
-                  
-                </div>
+                  <div class="col-md-6">
+                    <label for="pilihBarang" class="form-label d-block">Pilih Barang</label>
+                    <div class="w-100">
+                    <select class="form-select" id="pilihBarang" required>
+                      <option selected disabled>Pilih Barang</option>
+                      <option value="001/DP-ITD/INV">Laptop</option>
+                      <option value="002/DP-ITD/INV">Printer</option>
+                      <option value="003/DP-ITD/INV">Mouse</option>
+                    </select>
+                      </div>
+                      </div>
+                    </div>                    
               </form>
                <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->
