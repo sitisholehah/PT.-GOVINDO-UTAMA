@@ -94,12 +94,12 @@
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
-              <span class="menu-title">Basic UI Elements</span>
+              <span class="menu-title">Admin</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Profil Pengguna</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
               </ul>
@@ -364,11 +364,12 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> Serah Terima Barang </h3>
+              <h2 class="font-weight-bold"> Serah Terima Barang </h2>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Forms</a></li>
                   <li class="breadcrumb-item active" aria-current="page">Serah Terima Barang</li>
+                </div>                           
                 </ol>
               </nav>
             </div>  
@@ -392,73 +393,27 @@
                     <input type="date" class="form-control" id="tanggalPinjam" required>
                   </div>
                   <div class="col-md-6">
-                    <label for="barang" class="form-label">Pilih Barang</label>
-                    <select class="form-select" id="barang" required>
+                    <label for="Status" class="form-label d-block">Status</label>
+                    <div class="w-100">
+                    <select class="form-select" id="Status" required>
+                      <option selected disabled>Pilih Status</option>
+                      <option value="Aktif">Dipinjam</option>
+                      <option value="Tidak Aktif">Dikembalikan</option>
                     </select>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary mt-3">Tambah Data</button>
-                  </div>
-                </div>
+                  <div class="col-md-6">
+                    <label for="pilihBarang" class="form-label d-block">Pilih Barang</label>
+                    <div class="w-100">
+                    <select class="form-select" id="pilihBarang" required>
+                      <option selected disabled>Pilih Barang</option>
+                      <option value="001/DP-ITD/INV">Laptop</option>
+                      <option value="002/DP-ITD/INV">Printer</option>
+                      <option value="003/DP-ITD/INV">Mouse</option>
+                    </select>
+                      </div>
+                      </div>
+                    </div>                    
               </form>
-            <!-- Tabel Daftar Inventaris Barang -->
-              <h4 class="mt-5">Daftar Inventaris Barang</h4>
-                <table class="table table-bordered table-striped">
-                  <thead class="table-dark">
-                    <tr>
-                      <th>No</th>
-                      <th>Kode Barang</th>
-                      <th>Nama Barang</th>
-                      <th>Kelompok Barang</th>
-                      <th>Deskripsi</th>
-                      <th>Departemen Pemilik</th>
-                      <th>Merk</th>
-                      <th>Tipe/Part Number</th>
-                      <th>Serial Number</th>
-                      <th>Tanggal Pembelian</th>
-                      <th>Harga</th>
-                      <th>Tempat Pembelian</th>
-                      <th>Nama Penanggung Jawab</th>
-                      <th>Status Kondisi Barang</th>
-                      <th>Tempat/Lokasi Barang</th>
-                      <th>Tgl Exp. Garansi</th>
-                      <th>Keterangan</th>
-                      <th>Aksi</th>
-                      <td>
-                        <button class="btn btn-sm btn-warning">Edit</button>
-                        <button class="btn btn-sm btn-danger">Delete</button>
-                      </td>
-                    </tr>
-                  </thead>
-                  <tbody id="dataInventaris">
-                </tbody>
-                </table>
-                  <h4 class="mt-5">Daftar Peminjaman & Pengembalian</h4>
-                  <table class="table table-bordered table-striped">
-                    <thead class="table-dark">
-                      <tr>
-                        <th>Kode Barang</th>
-                        <th>Nama Peminjam</th>
-                        <th>Tanggal Pinjam</th>
-                        <th>Tanggal Kembali</th>
-                        <th>Kondisi Barang</th>
-                        <th>Status</th>
-                        <th>Aksi</th>
-                      </tr>
-                    </thead>
-                <tbody id="dataPeminjaman">
-                </tbody>
-               </table>
-                  </div>
-                  
                <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
-            </div>
-          </footer>
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
