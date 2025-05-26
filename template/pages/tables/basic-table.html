@@ -373,7 +373,7 @@
                   <th>Kode Barang</th>
                   <th>Nama Barang</th>
                   <th>Kelompok Barang</th>
-                  <th>Deskripsi</th>
+                  <th>Deskripsi Barang</th>
                   <th>Departemen Pemilik</th>
                   <th>Merk</th>
                   <th>Tipe/Part Number</th>
@@ -433,11 +433,35 @@
                   <td>IT GU</td>
                   <td>25-11-2024</td>
                   <td>-</td>
+                  <td>-</td>
                   <td>
                     <button class="btn btn-sm btn-warning">Edit</button>
                     <button class="btn btn-sm btn-danger">Delete</button>
                   </td>
                 </tr>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <form class="d-flex align-items-end">
+                      <!-- Kotak ComboBox -->
+                      <div class="me-3">
+                        <label for="divisiFilter" class="form-label">Pilih Divisi/Unit</label>
+                        <select id="divisiFilter" class="form-select">
+                          <option selected disabled>-- Pilih Divisi --</option>
+                          <option value="IT GU">IT GU</option>
+                          <option value="HRD">HRD</option>
+                          <option value="Finance">Finance</option>
+                          <!-- Tambahkan divisi lainnya sesuai kebutuhan -->
+                        </select>
+                      </div>
+                
+                      <!-- Tombol Cari sejajar di kanan -->
+                      <div class="pt-4">
+                        <button type="submit" class="btn btn-success">Cari</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                
                 <!-- Tambah baris lainnya sesuai kebutuhan -->
               </tbody>
             </table>
